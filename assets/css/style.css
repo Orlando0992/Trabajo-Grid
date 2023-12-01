@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+
+/*CODIGO ESTILOS PARA MENU*/
+.nav-bar {
+    background-color: #2b283e;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+}
+
+.logo img{
+    height: 100%;
+    width: 160px;
+    padding: 5px;
+}
+
+.nav-bar_menu ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.nav-bar_perfil ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+section {
+    padding: 0px 200px;
+    display: flex;
+    gap: 20px;
+    background-color:#F5F5F5;
+}
+
+/*CODIGO ESTILOS PARA ASIDE TITULO*/
+.container {
+    width: 20%;
+    border-radius: 0px 20px 20px 0;
+    background-color:	#DCDCDC;
+}
+.container_titulo {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.container_titulo h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 70%;
+    font-size: 16px;
+    height: 100%;
+}
+
+.container_titulo span {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+    font-size: 18px;
+}
+
+/*CODIGO ESTILOS PARA ASIDE ANIME*/
+.cajas {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    cursor: pointer;
+    height: 2rem;
+    font-size: 17px;
+}
+
+/*CODIGO ESTILO MENU PRINCIPAL*/
+.container_menu h2 {
+    text-align: center;
+    padding: 10px;
+}
+.container_cajas {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: repeat(2,320px) ;
+    gap: 15px;
+    padding: 10px;
+    grid-template-areas:
+    "caja1 caja2 caja3 caja4"
+    "caja5 caja6 caja7 caja8"
+}
+
+.container_cajas div {
+    border: 2px solid silver;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    cursor: pointer;
+}
+
+.caja1{
+    background-image: url(../img/Boku\ No\ Hero.jpg);
+    grid-area: caja1;
+    background-size: cover;
+}
+
+.caja1 p {
+    background-color: lightskyblue;
+    width: 30%;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    
+}
+
+.caja1 span {
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.caja2{
+    grid-area:  caja2;
+    background-image: url(../img/Tensei\ shitara\ Slime\ Datta\ Ken\ Coleus\ no\ Yume.jpg);
+    background-size: cover;
+}
+
+.caja2 p {
+    background-color: lightskyblue;
+    width: 30%;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    
+}
+
+.caja2 span {
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+}
+
+.caja3{
+    grid-area: caja3;
+    background-image: url(../img/Hoshikuzu\ Telepath.jpg);
+    background-size: cover;
+}
+
+.caja3 p {
+    background-color: lightskyblue;
+    width: 30%;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    
+}
+
+.caja3 span {
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+.caja4{
+    grid-area: caja4;
+    background-image: url(../img/Kusuriya\ no\ Hitorigoto.jpg);
+    background-size: cover;
+}
+
+.caja4 p {
+    background-color: lightskyblue;
+    width: 30%;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    
+}
+
+.caja4 span {
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+}
+
+.caja5{
+    grid-area: caja5;
+    background-image: url(../img/Spy\ x\ Family\ Season\ 2\ .jpg);
+    background-size: cover;
+}
+
+.caja5 p {
+    background-color: lightskyblue;
+    width: 30%;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    
+}
+
+.caja5 span {
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+}
+
+.caja6{
+    grid-area: caja6;
+    background-image: url(../img/one\ piece.jfif);
+    background-size: cover;
+}
+
+.caja6 p {
+    background-color: lightskyblue;
+    width: 30%;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    
+}
+
+.caja6 span {
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+}
+
+/*CODIGO ESTILO PIE DE PAGINA*/
+.container_pie_de_pagina {
+    background-color: #2b283e;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.conecta h4 {
+    padding-top: 10px;
+}
+
+.conecta .logo i {
+    padding-top: 15px;
+    display: flex;
+    gap: 20px;
+    height: 2rem;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.datos p{
+    padding-top: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    height: 2rem;
+    font-weight: bold;
+}
+
